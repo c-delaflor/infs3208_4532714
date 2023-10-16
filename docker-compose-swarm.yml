@@ -21,7 +21,7 @@ services:
     image: cdelaflor29/customphp:8.2-fpm-new
     build: ./src/php
     restart: always
-    expose:
+    ports:
       - 9000
     volumes:
       - ./src:/var/www/html
@@ -62,4 +62,4 @@ volumes:
 
 networks:
   mynet:
-    driver: bridge
+    driver: overlay
