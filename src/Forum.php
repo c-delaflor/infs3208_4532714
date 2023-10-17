@@ -59,7 +59,7 @@
         <div id="All" class ="tabcontent">
         <?php
             // Connect to the database
-            $conn = mysqli_connect('cdfFitness_mysql', 'php', 'php', 'cdf_fitness');
+            $conn = mysqli_connect('mysql', 'php', 'php', 'cdf_fitness');
             
             // Check connection
             if ($conn->connect_error) {
@@ -95,7 +95,7 @@
         <div id="Fitness" class ="tabcontent">
         <?php
             // Connect to the database
-            $conn = new mysqli('cdfFitness_mysql', 'php', 'php', 'cdf_fitness');
+            $conn = new mysqli('mysql', 'php', 'php', 'cdf_fitness');
             
             // Check connection
             if ($conn->connect_error) {

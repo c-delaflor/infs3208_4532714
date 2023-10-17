@@ -43,6 +43,8 @@ services:
       - ./src/nginx.ini:/etc/nginx/conf.d/default.conf
     networks:
       - mynet
+    deploy:
+      replicas: 2
 
   phpMyAdmin:
     depends_on:
@@ -61,4 +63,3 @@ volumes:
 
 networks:
   mynet:
-    driver: overlay
