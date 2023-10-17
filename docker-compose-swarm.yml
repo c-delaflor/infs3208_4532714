@@ -67,3 +67,4 @@ volumes:
 networks:
   mynet:
     driver: overlay
+    attachable: true
