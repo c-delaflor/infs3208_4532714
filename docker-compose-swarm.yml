@@ -18,7 +18,8 @@ services:
   myphp:
     depends_on:
       - mysql
-    image: cdelaflor29/customphp:8.2-fpm-new
+    image: 127.0.0.1:5000/myphp
+    build: ./setup/php
     restart: always
     ports:
       - 9000
