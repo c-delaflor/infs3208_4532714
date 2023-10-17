@@ -5,7 +5,7 @@ session_start();
 // Check if user is logged in
 if (!isset($_SESSION['user_id'])) {
     $_SESSION['error'] = "You must be logged in to create a post!";
-    header('Location: forum.php');
+    header('Location: Forum.php');
     exit();
 }
 
