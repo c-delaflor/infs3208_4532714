@@ -59,7 +59,3 @@ services:
 
 volumes:
   database: {}
-
-networks:
-  mynet:
-    driver: bridge
