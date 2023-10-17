@@ -20,7 +20,7 @@ services:
       - mysql
     image: cdelaflor29/customphp:8.2-fpm-new
     restart: always
-    publish:
+    ports:
       - 9000
     links:
       - 'mysql:mysql'
