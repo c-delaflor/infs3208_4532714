@@ -62,5 +62,3 @@ volumes:
   database: {}
 
 networks:
-  mynet:
-    driver: overlay
