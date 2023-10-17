@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     // Connect to the database
-    $conn = new mysqli('cdfFitness_mysql', 'php', 'php', 'cdf_fitness');
+    $conn = new mysqli('127.0.0.1', 'php', 'php', 'cdf_fitness');
     // Check connection
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
